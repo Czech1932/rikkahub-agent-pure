@@ -177,7 +177,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk-pure
-          path: app/build/outputs/apk/pure/*.apk
+          path: app/build/outputs/apk/pure/*arm64*.apk
           if-no-files-found: error
           retention-days: 14
 
