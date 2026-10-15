@@ -2,7 +2,7 @@
 name: text-spinner
 description: Renderuje obracającą się w 3D etykietę tekstową wewnątrz webview. Zwraca względny URL webview, który powierzchnia czatu może osadzić.
 license: Apache-2.0
-compatibility: Requires the JS skills tool (run_js) to be enabled.
+compatibility: Wymaga włączonego narzędzia JS skills (run_js).
 metadata:
   upstream: https://github.com/google-ai-edge/gallery
 ---

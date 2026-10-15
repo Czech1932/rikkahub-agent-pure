@@ -1,6 +1,6 @@
 ---
 name: autonomous-agent
-description: Doktryna stałego działania dla agenta RikkaHub. Bądź proaktywny (przewiduj potrzeby), wytrwały (przetrwaj utratę kontekstu dzięki logowi zapisu wyprzedzającego) i samodoskonalący się (zapisuj wnioski i błędy, potem promuj te przydatne). Uzupełnia personę agent-core o to, jak zachowywać się w czasie.
+description: Stała doktryna agenta: proaktywny, wytrwały, samodoskonalący się. Uzupełnia agent-core.
 auto_load: true
 ---
 

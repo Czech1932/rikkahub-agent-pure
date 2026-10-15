@@ -2,7 +2,7 @@
 name: calculate-hash
 description: Oblicza hash SHA-1 podanego tekstu za pomocą API WebCrypto w WebView.
 license: Apache-2.0
-compatibility: Requires the JS skills tool (run_js) to be enabled.
+compatibility: Wymaga włączonego narzędzia JS skills (run_js).
 metadata:
   upstream: https://github.com/google-ai-edge/gallery
 ---

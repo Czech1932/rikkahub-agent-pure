@@ -2,7 +2,7 @@
 name: interactive-map
 description: Wyświetla interaktywną mapę Google dla danej lokalizacji. Zwraca URL webview, który powierzchnia czatu może wyrenderować.
 license: Apache-2.0
-compatibility: Requires the JS skills tool (run_js) and network access.
+compatibility: Wymaga włączonego narzędzia JS skills (run_js) i dostępu do sieci.
 metadata:
   upstream: https://github.com/google-ai-edge/gallery
 ---

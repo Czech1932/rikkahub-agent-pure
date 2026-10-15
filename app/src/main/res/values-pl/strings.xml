@@ -12,10 +12,10 @@
   <string name="assistant_detail_basic_desc">Skonfiguruj nazwę, awatar, model i parametry</string>
   <string name="assistant_detail_extensions_desc">Zarządzaj szybkimi wiadomościami, wstrzyknięciami promptów, lorebookami i skillami</string>
   <string name="assistant_detail_local_tools_desc">Włącz narzędzia lokalne, takie jak silnik JavaScript</string>
-  <string name="assistant_detail_mcp_desc">Skonfiguruj narzędzia serwera MCP dla asystenta</string>
+  <string name="assistant_detail_mcp_desc">Skonfiguruj narzędzia serwera MCP dla asistenta</string>
   <string name="assistant_detail_memory_desc">Zarządzaj pamięcią asystenta i odniesieniami do ostatnich czatów</string>
   <string name="assistant_detail_prompt_desc">Ustaw prompty systemowe, szablony wiadomości i reguły regex</string>
-  <string name="assistant_detail_request_desc">Skonfiguruj niestandardowe nagłówki żądań i parametry treści</string>
+  <string name="assistant_detail_request_desc">Skonfiguruj niestandardowe nagłówki żądań i parametry treśći</string>
   <string name="assistant_extensions_page_empty_lorebooks">Brak dostępnych lorebooków, utwórz jeden w promptach</string>
   <string name="assistant_extensions_page_empty_mode_injections">Brak dostępnych wstrzyknięć trybu, utwórz jedno w promptach</string>
   <string name="assistant_extensions_page_empty_quick_messages">Brak dostępnych szybkich wiadomości, utwórz jedną w rozszerzeniach</string>
@@ -49,6 +49,10 @@
   <string name="assistant_page_background_opacity">Przezroczystość tła</string>
   <string name="assistant_page_background_opacity_desc">Dostosuj widoczność obrazu tła czatu</string>
   <string name="assistant_page_background_opacity_value">Przezroczystość: %1$d%%</string>
+  <string name="assistant_page_background_slot_common">Wspólne</string>
+  <string name="assistant_page_background_slot_dark">Ciemne</string>
+  <string name="assistant_page_background_slot_light">Jasne</string>
+  <string name="assistant_page_background_fallback_hint">Nie ustawiono — używa wspólnej tapety.</string>
   <string name="assistant_page_background_set">Ustawiono obraz tła</string>
   <string name="assistant_page_balanced">Zrównoważony</string>
   <string name="assistant_page_body_key">Klucz body</string>
@@ -96,7 +100,7 @@
   <string name="assistant_page_max_tokens_no_token_limit">Brak limitu tokenów</string>
   <string name="assistant_page_tool_result_budget">Budżet wyników narzędzia</string>
   <string name="assistant_page_tool_result_budget_desc">Ogranicza ilość kontekstu, jaką może zajmować pojedynczy wynik narzędzia. Dłuższe wyniki zachowują początek i koniec, a pełny tekst jest zapisywany w /tool_outputs/, aby model mógł go odczytać na żądanie. Pozostaw puste, aby przywrócić domyślne zachowanie.</string>
-  <string name="assistant_page_tool_result_budget_placeholder">Default (32 KB spill gate only)</string>
+  <string name="assistant_page_tool_result_budget_placeholder">Domyślnie (tylko brama przelewowa 32 KB)</string>
   <string name="assistant_page_tool_result_budget_active">Limit: około %d tokenów na wynik narzędzia</string>
   <string name="assistant_page_tool_result_budget_off">Używanie domyślnego limitu (32 KB znaków, tylko podgląd początku)</string>
   <string name="assistant_page_advanced_section">Zaawansowane / eksperymentalne</string>
@@ -600,7 +604,7 @@
   <string name="prompt_page_position_before_system">Przed promptem systemowym</string>
   <string name="prompt_page_position_bottom_of_chat">Przed ostatnią wiadomością</string>
   <string name="prompt_page_position_top_of_chat">Na górze czat</string>
-  <string name="prompt_page_priority_format">Prio: %d</string>
+  <string name="prompt_page_priority_format">%d</string>
   <string name="prompt_page_priority_label">Priorytet</string>
   <string name="prompt_page_role_assistant">Asystent (prefill)</string>
   <string name="prompt_page_role_user">Użytkownik</string>
@@ -820,6 +824,8 @@
   <string name="setting_display_page_tts_read_outside_brackets_title">TTS pomijaj treść w nawiasach</string>
   <string name="setting_display_page_use_app_icon_style_loading_indicator_desc">Użyj animowanej ikony aplikacji zamiast domyślnego kołowego wskaźnika ładowania</string>
   <string name="setting_display_page_use_app_icon_style_loading_indicator_title">Użyj wskaźnika ładowania w stylu ikony aplikacji</string>
+  <string name="setting_display_page_bounce_overscroll_desc">Efekt odbicia podczas przewijania poza krawędź listy czatów</string>
+  <string name="setting_display_page_bounce_overscroll_title">Odbicie przy przewijaniu</string>
   <string name="setting_display_page_volume_key_scroll_desc">Przewijaj strony za pomocą przycisków głośności, idealne do ekranów e-ink</string>
   <string name="setting_display_page_volume_key_scroll_ratio">Wielkość przewijania</string>
   <string name="setting_display_page_volume_key_scroll_title">Przewijanie stron przyciskami głośności</string>
@@ -1241,7 +1247,7 @@
   <string name="stats_page_dow_wed">Śr</string>
   <string name="stats_page_heatmap_less">Mniej</string>
   <string name="stats_page_heatmap_more">Więcej</string>
-  <string name="stats_page_heatmap_title">Mapa aktywności czatu</string>
+  <string name="stats_page_heatmap_title">Mapa aktywności czat</string>
   <string name="stats_page_input_tokens">Tokeny wejściowe</string>
   <string name="stats_page_launch_count">Liczba uruchomień aplikacji</string>
   <string name="stats_page_output_tokens">Tokeny wyjściowe</string>

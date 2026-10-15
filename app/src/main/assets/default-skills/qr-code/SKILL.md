@@ -2,7 +2,7 @@
 name: qr-code
 description: Generuje kod QR PNG 512x512 dla podanego URL. Zwraca obraz zakodowany w base64. Działa całkowicie offline.
 license: Apache-2.0
-compatibility: Requires the JS skills tool (run_js) to be enabled.
+compatibility: Wymaga włączonego narzędzia JS skills (run_js).
 metadata:
   upstream: https://github.com/google-ai-edge/gallery
 ---

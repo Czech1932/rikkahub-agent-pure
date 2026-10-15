@@ -1,6 +1,6 @@
 ---
 name: agent-core
-description: Podręcznik obsługi agenta RikkaHub działającego na urządzeniu. Ładuje personę (SOUL), cykliczną pętlę świadomości (HEARTBEAT) oraz pełną referencję narzędzi (TOOLS), dzięki czemu model wie, czym jest, jak się zachowywać i jakie dokładnie ma możliwości.
+description: Podręcznik agenta RikkaHub na urządzeniu. Ładuje personę (SOUL), pętlę świadomości (HEARTBEAT) i referencję narzędzi (TOOLS).
 auto_load: true
 auto_load_path: SOUL.md
 ---
