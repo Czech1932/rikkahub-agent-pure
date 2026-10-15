@@ -1,6 +1,6 @@
 ---
 name: query-wikipedia
-description: Fuzzy-search Wikipedia for a topic and return the introduction plus infobox extract. Requires internet.
+description: Wyszukuje rozmyto temat w Wikipedii i zwraca wstęp oraz wyciąg z infoboksu. Wymaga internetu.
 license: Apache-2.0
 compatibility: Requires the JS skills tool (run_js) and network access.
 metadata:
