@@ -413,7 +413,7 @@ private fun ChatPageContent(
         )
     }
     val onUpdateChatModel: (Model) -> Unit = { model ->
-        vm.setChatModel(assistant = setting.getCurrentAssistant(), model = model)
+        vm.setConversationChatModel(model)
     }
     val onUpdateSearchService: (Int) -> Unit = { index ->
         vm.updateSettings(setting.copy(searchServiceSelected = index))
@@ -505,6 +505,7 @@ private fun ChatPageContent(
                         )
                     },
                     enableSearch = enableWebSearch,
+                    conversationChatModelId = conversation.chatModelId,
                     onUpdateChatModel = onUpdateChatModel,
                     onUpdateSearchMode = onUpdateSearchMode,
                     onUpdateSearchService = onUpdateSearchService,
@@ -618,7 +619,15 @@ private fun ChatPageContent(
                 // full-screen veil, is what turned the wallpaper grey.
                 val fade = titleBarFade(
                     darkTheme = LocalDarkMode.current,
-                    photoShown = chatPhotoShown(assistant.background, assistant.useGradientBackground),
+                    photoShown = chatPhotoShown(
+                        effectiveBackground(
+                            darkTheme = LocalDarkMode.current,
+                            background = assistant.background,
+                            darkBackground = assistant.darkBackground,
+                            lightBackground = assistant.lightBackground,
+                        ),
+                        assistant.useGradientBackground,
+                    ),
                 )
                 val fadeColor = MaterialTheme.colorScheme.background
                 Box(
@@ -790,7 +799,15 @@ private fun TopBar(
             val assistant = settings.getCurrentAssistant()
             val titleOnPhoto = looseTextNeedsPhotoPlate(
                 darkTheme = LocalDarkMode.current,
-                photoShown = chatPhotoShown(assistant.background, assistant.useGradientBackground),
+                photoShown = chatPhotoShown(
+                    effectiveBackground(
+                        darkTheme = LocalDarkMode.current,
+                        background = assistant.background,
+                        darkBackground = assistant.darkBackground,
+                        lightBackground = assistant.lightBackground,
+                    ),
+                    assistant.useGradientBackground,
+                ),
             )
             Surface(
                 onClick = {
