@@ -167,7 +167,7 @@ jobs:
           ./gradlew :app:assemblePure :app:testPureUnitTest :ai:testDebugUnitTest $FLAGS --stacktrace
 
       - name: Show pure APK sizes
-        run: ls -la app/build/outputs/apk/pure/*.apk || true
+        run: ls -la app/build/outputs/apk/pure/*arm64*.apk || true
 
       - name: Show ccache stats
         if: always()
@@ -177,7 +177,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk-pure
-          path: app/build/outputs/apk/pure/*.apk
+          path: app/build/outputs/apk/pure/*arm64*.apk
           if-no-files-found: error
           retention-days: 14
 
